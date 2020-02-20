@@ -1,31 +1,19 @@
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "tequila")
-Ingredient.create(name: "Champagne")
-Ingredient.create(name: "kiwi")
-Ingredient.create(name: "Bacardi")
-Ingredient.create(name: "orange")
-Ingredient.create(name: "sugar")
-Ingredient.create(name: "lime")
-Ingredient.create(name: "gin")
-Ingredient.create(name: "tonic")
-Ingredient.create(name: "strawberry")
-Ingredient.create(name: "sprite")
-Ingredient.create(name: "whiskey")
+require 'open-uri'
 
-# require 'open-uri'
-# require 'json'
+puts "Destroy ingredients"
+Ingredient.destroy_all if Rails.env.development?
 
-# Ingredient.delete_all
+puts "Destroy Cocktails"
+Cocktail.destroy_all if Rails.env.development?
 
-# open('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list') do |ingredients|
-#   data = []
-#   ingredients.read.each_line do |ingredient|
-#     @item = JSON.parse(ingredient)
-#       object = {
-#         "drinks.strIngredient1": @item["strIngredient1"]
-#       }
-#       data << object
-#   end
-#   Ingredient.create!(data)
-# end
+puts "Create ingredients"
+url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+ingredients = JSON.parse(open(url).read)
+ingredients["drinks"].each do |ingredient|
+  i = Ingredient.create(name: ingredient["strIngredient1"])
+  puts "create #{i.name}"
+end
+
+
+Dose.create(description: "test", cocktail_id: 1)
+
