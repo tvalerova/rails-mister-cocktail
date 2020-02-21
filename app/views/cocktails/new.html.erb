@@ -1,8 +1,15 @@
- <%= link_to "Back to cocktails", cocktails_path %>
+ <div class="container">
+ <div id="all-cocktails">
+    <p><%= link_to 'All Cocktails', cocktails_path %></p>
+  </div>
 <br>
-<br>
+<div>
+<div class="new-cocktail">
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name %>
-
-  <%= f.submit class: 'btn btn-info' %>
+<br>
+  <%= f.submit class: 'btn create-btn' %>
 <% end %>
+</div>
+</div>
+</div>
