@@ -3,7 +3,7 @@ because this is a partial form, we render it in show.html.erb cocktails file -->
 <%= simple_form_for [cocktail, dose] do |f| %>
   <%= f.input :description %>
   <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
-  <%= f.submit class: 'btn btn-info' %>
+  <%= f.submit class: 'btn create-btn' %>
 <% end %>
 
 
