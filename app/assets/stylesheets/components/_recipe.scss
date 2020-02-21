@@ -2,16 +2,35 @@
   margin-top: 55px;
 }
 
-h3, th, td{
+th, td{
   color: $spanish_gray;
+}
+
+h3{
+  color: $bright_gray;
 }
 
 .form-header{
   color: $spanish_gray;
 }
 
+#reviews{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.review{
+  margin-bottom: 40px;
+}
+
+.recipe{
+  margin-bottom: 40px;
+}
+
+
 .recipe-dose{
   display: flex;
+  margin-bottom: 40px;
 }
 
 .create-btn{
@@ -33,6 +52,13 @@ h3, th, td{
   }
 }
 
+.center{
+  text-align: center;
+}
+
+.fa-trash{
+  color: $spanish_gray;
+}
 
   #all-cocktails{
   position: absolute;
