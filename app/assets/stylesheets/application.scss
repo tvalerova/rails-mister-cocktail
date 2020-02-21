@@ -15,9 +15,11 @@
 @import "components/card";
 @import "config/colors";
 @import "components/recipe";
+@import "components/footer";
 
 body{
   background-color: $black;
+  font-family: Poppins;
 }
 
 
