@@ -1,13 +1,30 @@
-<h1>Cocktails</h1>
+
+
+<div class="banner">
+    <div id="new-cocktail">
+      <p><%= link_to 'Add a Cocktail', new_cocktail_path %></p>
+    </div>
+  <div class="container">
+    <h1><strong>Boozy Town</strong></h1>
+    <br>
+    <p>Classics, unique concoctions made with rare spirits, trendy creations all in one place.<br>Created, maintained and reviewed by users only.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div id="h2">
+    <h2>Cocktails</h2>
+  </div>
+  <br>
+  <div class="cards-cocktails">
+   <% @cocktails.each do |cocktail| %>
+   <div class="card-cocktail">
+    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </div>
+  <% end %>
+</div>
+</div>
+
 <br>
 
-<ul>
- <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-<% end %>
-</ul>
-<br>
-
-
-<%= link_to 'Create a New Cocktail', new_cocktail_path %>
 

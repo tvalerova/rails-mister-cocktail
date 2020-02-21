@@ -2,3 +2,17 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+#h2{
+  color: $chinese_silver;
+  margin: 20px 16px;
+
+}
+
+#new-cocktail{
+
+  align-items: flex-start;
+  a{
+    color: $chinese_silver;
+  }
+}
