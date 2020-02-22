@@ -1,15 +1,14 @@
  <div class="container">
+  <div class="form-container">
  <div id="all-cocktails">
     <p><%= link_to 'All Cocktails', cocktails_path %></p>
   </div>
 <br>
-<div>
-<div class="new-cocktail">
+<br>
 <%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
+  <%= f.input :name, label_html: {class: 'form-header'}%>
 <br>
   <%= f.submit class: 'btn create-btn' %>
 <% end %>
-</div>
 </div>
 </div>
