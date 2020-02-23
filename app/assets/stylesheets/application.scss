@@ -16,6 +16,7 @@
 @import "config/colors";
 @import "components/recipe";
 @import "components/footer";
+@import "components/button";
 
 body{
   background-color: $black;
@@ -24,7 +25,4 @@ body{
   height: 100vh;
 }
 
-h3{
-  color: $bright_gray;
-}
 
