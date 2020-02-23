@@ -21,7 +21,7 @@
   <div class="cards-cocktails">
    <% @cocktails.each do |cocktail| %>
    <div class="card-cocktail" style="background-image: url('<%= cl_image_path cocktail.photo.attached? ? cocktail.photo.key : "vu4i3rnhbtglqit2rjnh" %>');">
-    <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+    <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></h3>
   </div>
   <% end %>
 </div>

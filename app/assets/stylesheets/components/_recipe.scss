@@ -3,7 +3,7 @@
   padding-top: 40px;
 }
 
-th, td{
+th, td, .form-control-file, .form-header{
   color: $spanish_gray;
 }
 
@@ -12,9 +12,9 @@ th, td{
   margin-bottom: 40px;
 }
 
-.form-control-file{
-  color: $spanish_gray;
-}
+// .form-control-file{
+//   color: $spanish_gray;
+// }
 
 .form-header{
   color: $spanish_gray;

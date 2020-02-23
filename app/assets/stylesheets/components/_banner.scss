@@ -1,3 +1,4 @@
+// position set to relative to style button on top as absolute
 .container{
   position: relative;
 }
@@ -10,22 +11,23 @@
   filter: grayscale(100%);
   border-radius: 5px;
 
-h1 {
-  margin: 0;
-  color: $chinese_silver;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
-}
+  h1 {
+    margin: 0;
+    color: $chinese_silver;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 32px;
+    font-weight: bold;
+  }
 
   p {
-  font-size: 20px;
-  color: $chinese_silver;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
+    font-size: 20px;
+    color: $chinese_silver;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
 }
 
+// Add cocktail button
 #new-cocktail{
   position: absolute;
   top: 10px;
@@ -44,9 +46,9 @@ h1 {
   a{
     text-decoration: none;
     color: $chinese_silver;
-
-    &:hover {
-    color: $bright_gray;
   }
+
+  &:hover {
+    color: $bright_gray;
   }
 }

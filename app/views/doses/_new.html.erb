@@ -1,7 +1,7 @@
 <!-- in array vars are not instance vars,
 because this is a partial form, we render it in show.html.erb cocktails file -->
 <%= simple_form_for [cocktail, dose] do |f| %>
-  <%= f.input :description %>
+  <%= f.input :description, collection: ['2cl', '4cl', '100ml', '300ml', '500ml', 'juice of', '5 leaves of', 'a pinch of', '1tsp', '1tbsp'] %>
   <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
   <%= f.submit class: 'btn create-btn' %>
 <% end %>

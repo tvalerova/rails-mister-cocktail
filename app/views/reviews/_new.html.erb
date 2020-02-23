@@ -1,6 +1,6 @@
 <%= simple_form_for [cocktail, review] do |f| %>
   <%= f.input :content, label_html: {class: 'form-header'} %>
- <%= f.input :rating, collection: 1..5, label_html: {class: 'form-header'} %>
+  <%= f.input :rating, collection: 1..5, label_html: {class: 'form-header'} %>
   <%= f.submit class: 'btn create-btn' %>
 <% end %>
 
