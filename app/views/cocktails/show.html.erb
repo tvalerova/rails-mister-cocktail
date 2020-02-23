@@ -3,8 +3,8 @@
   </div>
 
   <div class="container main" >
-    <div>
-      <h2 id="h2"><%= @cocktail.name %></h2>
+    <div class="card-cocktail cocktail-info" style="background-image: url('<%= cl_image_path @cocktail.photo.key %>')">
+      <h2 id="h2"><%= @cocktail.name.capitalize %></h2>
     </div>
 
     <div class="row recipe-dose">
@@ -43,7 +43,7 @@
       <div class="col-sm-12 col-md-6 review">
         <h3>Reviews</h3><br>
         <% if @cocktail.reviews.empty? %>
-        <span class="form-header">Be the first to let a review</span>
+        <span class="form-header">Be the first to leave a review</span>
         <% else %>
         <ul class="list-group">
           <% @cocktail.reviews.each do |review| %>

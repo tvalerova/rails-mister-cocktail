@@ -1,14 +1,17 @@
  <div class="container">
   <div class="form-container">
- <div id="all-cocktails">
+
+   <div id="all-cocktails">
     <p><%= link_to 'All Cocktails', cocktails_path %></p>
   </div>
-<br>
-<br>
-<%= simple_form_for(@cocktail) do |f| %>
+
+  <br>
+  <br>
+  <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name, label_html: {class: 'form-header'}%>
-<br>
+  <%= f.input :photo, as: :file, label_html: {class: 'form-header'} %>
+  <br>
   <%= f.submit class: 'btn create-btn' %>
-<% end %>
+  <% end %>
 </div>
 </div>

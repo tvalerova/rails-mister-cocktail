@@ -1,13 +1,18 @@
 .main{
   margin-top: 55px;
+  padding-top: 40px;
 }
 
 th, td{
   color: $spanish_gray;
 }
 
-h3{
-  color: $bright_gray;
+.cocktail-info{
+  margin-bottom: 40px;
+}
+
+.form-control-file{
+  color: $spanish_gray;
 }
 
 .form-header{

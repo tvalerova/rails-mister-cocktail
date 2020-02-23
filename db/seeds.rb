@@ -15,10 +15,3 @@ ingredients["drinks"].each do |ingredient|
 end
 
 # Dose.create(description: "test", cocktail_id: 1)
-
-
-Review.create(rating: 1)
-Review.create(rating: 2)
-Review.create(rating: 3)
-Review.create(rating: 4)
-Review.create(rating: 5)
