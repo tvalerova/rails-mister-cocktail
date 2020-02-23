@@ -4,7 +4,7 @@
 
   <div class="container main" >
     <div class="card-cocktail cocktail-info" style="background-image: url('<%= cl_image_path @cocktail.photo.attached? ? @cocktail.photo.key : "vu4i3rnhbtglqit2rjnh" %>');">
-      <h2 id="h2"><%= @cocktail.name.capitalize %></h2>
+      <h2 id="h2"><%= @cocktail.name.titleize %></h2>
     </div>
 
     <div class="row recipe-dose">

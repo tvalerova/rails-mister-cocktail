@@ -14,16 +14,16 @@
   h1 {
     margin: 0;
     color: $chinese_silver;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     font-size: 32px;
     font-weight: bold;
   }
 
-  p {
-    font-size: 20px;
+  span {
+    font-size: 23px;
     color: $chinese_silver;
     opacity: .7;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   }
 }
 

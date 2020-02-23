@@ -7,7 +7,7 @@
   <div class="container">
     <h1><strong>Boozy Town</strong></h1>
     <br>
-    <p>Classics, unique concoctions made with rare spirits, trendy creations all in one place.<br>Created, maintained and reviewed by users.</p>
+    <span id="banner-typed-text"><!-- Classics, unique concoctions made with rare spirits, trendy creations, all in one place.<br>Created, maintained and reviewed by users. --></span>
   </div>
 </div>
 
@@ -21,7 +21,7 @@
   <div class="cards-cocktails">
    <% @cocktails.each do |cocktail| %>
    <div class="card-cocktail" style="background-image: url('<%= cl_image_path cocktail.photo.attached? ? cocktail.photo.key : "vu4i3rnhbtglqit2rjnh" %>');">
-    <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></h3>
+    <h3><%= link_to cocktail.name.titleize, cocktail_path(cocktail) %></h3>
   </div>
   <% end %>
 </div>
